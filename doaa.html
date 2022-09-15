@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الدعاء</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100vh;
+            direction: rtl;
+        }
+        h3{
+            text-align: center;
+            padding: 12px 15px;
+            font-size: 24px;
+            height: 51px;
+        }
+        .container{
+            width: 80%;
+            margin: auto;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 65px;
+        }
+
+        iframe{
+            border-radius: 6px;
+        }
+        .iframe{
+            border-radius: 6px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            cursor: pointer;
+        }
+        .iframe::before{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.707);
+            top: 0;
+            content: "";
+            right: 0%;
+        }
+        
+        .iframe span{
+            position: absolute;
+            font-size: 25px;
+            color: white ;
+            cursor: pointer;
+        }
+
+        footer{
+            bottom: 0;
+            width: 100%;
+            background-color: black;
+        }
+
+
+    </style>
+
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css.map">
+
+</head>
+<body>
+    
+
+    <div class="container">
+       <div class="iframe" iframeSrc="doaa/4_5936193734252170070.pdf"> <span>يا باغى الدعاء </span>  <iframe src="doaa/4_5936193734252170070.pdf" frameborder="0"></iframe> </div>
+       <div class="iframe" iframeSrc="doaa/Noor-Bookcom  جامع الدعاء من القرآن والسنة 3 _220707_174728.pdf"> <span>جامع الدعاء</span> <iframe src="doaa/Noor-Bookcom  جامع الدعاء من القرآن والسنة 3 _220707_174728.pdf" frameborder="0"></iframe> </div>
+       <div class="iframe" iframeSrc="doaa/الذكر المضاعف وله ٦ صيغ .pdf"> <span>الذكر المضعف</span> <iframe src="doaa/الذكر المضاعف وله ٦ صيغ .pdf" frameborder="0"></iframe> </div>
+    </div>
+
+
+
+
+     <!-- footer -->
+     <footer class="bg-light text-center text-lg-start position-absolute">
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2022 Copyright:
+            <a class="text-dark" href="">BY:Abdelerahman Sameeh</a>
+        </div>
+        <!-- Copyright -->
+        </footer>
+
+
+
+    <!-- scripts -->
+
+
+
+
+
+    <script>
+        let frames=document.querySelectorAll(".iframe")
+
+
+frames.forEach(frame => {
+        frame.addEventListener("click", ()=>{
+
+            removeActiveClass(frames)
+            frame.classList.add("active")
+
+            window.open("display.html")
+            localStorage.setItem("iframeSrc" , frame.getAttribute("iframeSrc") )
+
+        })
+    });
+
+function removeActiveClass(arr){
+    arr.forEach(e=>{
+            e.classList.remove("active")
+    })
+}
+    </script>
+
+
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>master</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+        body{
+            width: 100%;
+            height: 100vh;
+            direction: rtl;
+        }
+
+        .header {
+            position: relative;
+            top: 28px;
+
+        }
+        .header .container ul{
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .header .container ul li a{
+            margin: 10px;
+            padding: 10px 13px;
+            text-decoration: none;
+            color: white;
+            border-radius: 50px;
+            background-image:linear-gradient(88deg, #86507c, #db3464bf) ;
+        }
+        .header .container ul li:hover{
+            background-color: transparent !important;
+        }
+        
+
+        .container2 h3{
+            text-align: center;
+            padding: 12px 15px;
+            font-size: 24px;
+            height: 51px;
+        }
+        .container2{
+            width: 80%;
+            height: 367px;
+            margin: auto;
+            background-color: #d0d0d0;
+            top: 50%;
+            transform: translateY(36%);
+        }
+        .d-flex{
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            width: 100%;
+            height: 85%;
+            gap: 15px;
+        }
+        .d-flex .content{
+            width: 32%;
+            background: white;
+            overflow: auto;
+            padding: 0;
+            height: 307px;
+        }
+        .d-flex li{
+            background-image: linear-gradient(88deg, #86507c, #db3464bf);
+            padding: 15px 19px;
+            text-align: center;
+            font-size: 20px;
+            color: white;
+            font-family: arial;
+            cursor: pointer;
+            transition: .3s;
+            border-bottom: 1px solid white;
+        }
+        li:hover,.active{
+            background-color: black;
+
+        }
+        audio{
+            width: 64%;
+        }
+        @media (max-width:660px){
+            .d-flex{
+                align-items: center;
+                justify-content: center;
+            }
+            .d-flex .content,audio{
+                width: 100%;
+            }
+        }
+
+        footer{
+            bottom: 0;
+            width: 100%;
+            background-color: black;
+        }
+
+    </style>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css.map">
+</head>
+<body >
+    
+
+    <!-- header -->
+
+    <div class="header">
+        <div class="container">
+            <ul>
+                <li><a href="#">القران الكريم</a></li>
+                <li><a href="doaa.html" target="_blank">الادعيه</a></li>
+            </ul>
+        </div>
+    </div>
+
+
+
+<!-- content -->
+
+    <div class="container2 postion-absolute ">
+        <h3>اختر سوره</h3>
+        <div class="d-flex">
+            <ul class="content">
+                <li>الفاتحة</li><li>البقرة</li><li>آل عمران</li><li>النساء</li><li>المائدة</li><li>الأنعام</li><li>الأعراف</li><li>الأنفال</li><li>التوبة</li><li>يونس</li><li>هود</li><li>يوسف</li><li>الرعد</li><li>إبراهيم</li><li>الحجر</li><li>النحل</li><li>الإسراء</li><li>الكهف</li><li>مريم</li><li>طه</li><li>الأنبياء</li><li>الحج</li><li>المؤمنون</li><li>النور</li><li>الفرقان</li><li>الشعراء</li><li>النمل</li><li>القصص</li><li>العنكبوت</li><li>الروم</li><li>لقمان</li><li>السجدة</li><li>الأحزاب</li><li>سبأ</li><li>فاطر</li><li>يس</li><li>الصافات</li><li>ص</li><li>الزمر</li><li>غافر</li><li>فصلت</li><li>الشورى</li><li>الزخرف</li><li>الدخان</li><li>الجاثية</li><li>الأحقاف</li><li>محمد</li><li>الفتح</li><li>الحجرات</li><li>ق</li><li>الذاريات</li><li>الطور</li><li>النجم</li><li>القمر</li><li>الرحمن</li><li>الواقعة</li><li>الحديد</li><li>المجادلة</li><li>الحشر</li><li>الممتحنة</li><li>الصف</li><li>الجمعة</li><li>المنافقون</li><li>التغابن</li><li>الطلاق</li><li>التحريم</li><li>الملك</li><li>القلم</li><li>الحاقة</li><li>المعارج</li><li>نوح</li><li>الجن</li><li>المزمل</li><li>المدثر</li><li>القيامة</li><li>الإنسان</li><li>المرسلات</li><li>النبأ</li><li>النازعات</li><li>عبس</li><li>التكوير</li><li>الإنفطار</li><li>المطففين</li><li>الإنشقاق</li><li>البروج</li><li>الطارق</li><li>الأعلى</li><li>الغاشية</li><li>الفجر</li><li>البلد</li><li>الشمس</li><li>الليل</li><li>الضحى</li><li>الشرح</li><li>التين</li><li>العلق</li><li>القدر</li><li>البينة</li><li>الزلزلة</li><li>العاديات</li><li>القارعة</li><li>التكاثر</li><li>العصر</li><li>الهمزة</li><li>الفيل</li><li>قريش</li><li>الماعون</li><li>الكوثر</li><li>الكافرون</li><li>النصر</li><li>المسد</li><li>الإخلاص</li><li>الفلق</li><li>الناس</li>
+            </ul>
+
+                <audio controls src=""></audio>
+
+        </div>
+    </div>
+    
+    
+    
+    
+    <!-- footer -->
+    <footer class="bg-light text-center text-lg-start position-absolute">
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2022 Copyright:
+            <a class="text-dark" href="">BY:Abdelerahman Sameeh</a>
+        </div>
+        <!-- Copyright -->
+        </footer>
+
+
+
+
+        <script src="index.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
